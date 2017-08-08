@@ -35,9 +35,6 @@ init_per_suite(Config) ->
 
     Config.
 
-end_per_suite(Config) ->
-    Config.
-
 %% The main test application.  Tests Rust port and nif.
 test_test_app(Config) ->
     #{priv_dir := PrivDir} = maps:from_list(Config),
